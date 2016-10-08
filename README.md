@@ -1,3 +1,3 @@
 # X9-PCB-Power-Conversion
 
-The 12V to 3.3V buck regulator board
+The 48V to 12V buck regulator board
