@@ -1431,6 +1431,8 @@ part number 2062-2P from STA</description>
 <part name="J1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
+<part name="J2" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1451,9 +1453,11 @@ part number 2062-2P from STA</description>
 <instance part="GND2" gate="1" x="30.48" y="5.08"/>
 <instance part="GND3" gate="1" x="45.72" y="5.08"/>
 <instance part="P+1" gate="1" x="7.62" y="43.18"/>
-<instance part="J1" gate="G$1" x="73.66" y="35.56" rot="R180"/>
-<instance part="GND4" gate="1" x="66.04" y="30.48"/>
-<instance part="P+2" gate="1" x="66.04" y="38.1"/>
+<instance part="J1" gate="G$1" x="53.34" y="40.64" rot="R180"/>
+<instance part="GND4" gate="1" x="45.72" y="35.56"/>
+<instance part="P+2" gate="1" x="45.72" y="43.18"/>
+<instance part="J2" gate="G$1" x="58.42" y="27.94" rot="R180"/>
+<instance part="GND5" gate="1" x="50.8" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -1479,9 +1483,11 @@ part number 2062-2P from STA</description>
 <pinref part="U$4" gate="G$1" pin="D1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="C"/>
 <wire x1="38.1" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="27.94" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<pinref part="U$2" gate="G$1" pin="C"/>
+<wire x1="45.72" y1="27.94" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="17.78" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1502,6 +1508,10 @@ part number 2062-2P from STA</description>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="2"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V+" class="0">
