@@ -237,6 +237,7 @@ UsedLibrary="C:/EAGLE-7.6.0/lbr/national-instruments.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/national-semiconductor.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/nec-lqfp100-pack.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/nec.lbr"
+UsedLibrary="C:/EAGLE-7.6.0/lbr/newConnector.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/nrj-semiconductor.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/omnivision.lbr"
 UsedLibrary="C:/EAGLE-7.6.0/lbr/on-semiconductor.lbr"
@@ -355,7 +356,7 @@ UsedLibrary="C:/Users/Jess/Documents/GitHub/X9-PCB-Part-Library/SparkFun/SparkFu
 [Win_1]
 Type="Control Panel"
 Loc="-11 -11 1908 974"
-State=1
+State=2
 Number=0
 
 [Desktop]
