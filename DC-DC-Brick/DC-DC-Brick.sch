@@ -7910,6 +7910,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P-3" library="supply1" deviceset="V-" device=""/>
+<part name="R5" library="SparkFun-Resistors" deviceset="1KOHM-1/10W-1%(0603)" device="" value="220"/>
+<part name="P-4" library="supply1" deviceset="V-" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7930,7 +7932,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="GND6" gate="1" x="266.7" y="152.4"/>
 <instance part="GND7" gate="1" x="266.7" y="142.24"/>
 <instance part="R6" gate="G$1" x="223.52" y="121.92" rot="R90"/>
-<instance part="GND12" gate="1" x="223.52" y="114.3"/>
+<instance part="GND12" gate="1" x="223.52" y="111.76"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="P-2" gate="1" x="226.06" y="152.4"/>
 <instance part="C14" gate="G$1" x="109.22" y="154.94"/>
@@ -7961,6 +7963,8 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="P+2" gate="VCC" x="292.1" y="109.22"/>
 <instance part="GND8" gate="1" x="292.1" y="78.74"/>
 <instance part="P-3" gate="1" x="292.1" y="93.98"/>
+<instance part="R5" gate="G$1" x="205.74" y="127" rot="R90"/>
+<instance part="P-4" gate="1" x="205.74" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -8003,6 +8007,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="223.52" y1="114.3" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
@@ -8139,6 +8144,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <pinref part="P-3" gate="1" pin="V-"/>
 <wire x1="289.56" y1="96.52" x2="292.1" y2="96.52" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="P-4" gate="1" pin="V-"/>
+<wire x1="205.74" y1="121.92" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$12" class="0">
 <segment>
@@ -8195,13 +8205,18 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <junction x="294.64" y="162.56"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="ON/OFF" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="ON/OFF1"/>
 <wire x1="231.14" y1="134.62" x2="218.44" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="134.62" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="ON/OFF"/>
 <wire x1="218.44" y1="91.44" x2="264.16" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="134.62" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
+<junction x="218.44" y="134.62"/>
+<label x="220.98" y="137.16" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$8" class="0">
