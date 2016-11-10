@@ -1682,8 +1682,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <sheets>
 <sheet>
 <plain>
-<text x="60.96" y="121.92" size="1.778" layer="91">need optoisolator here
-to avoid gnd loop</text>
 </plain>
 <instances>
 <instance part="F1" gate="G$1" x="177.8" y="127"/>
@@ -2074,9 +2072,15 @@ to avoid gnd loop</text>
 </net>
 <net name="ONOFF" class="0">
 <segment>
-<wire x1="104.14" y1="116.84" x2="91.44" y2="116.84" width="0.1524" layer="91"/>
 <label x="91.44" y="116.84" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="ON/OFF"/>
+<pinref part="U$7" gate="G$1" pin="D1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="C"/>
+<wire x1="63.5" y1="106.68" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="116.84" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="104.14" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
@@ -2105,26 +2109,9 @@ to avoid gnd loop</text>
 <wire x1="40.64" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="U$7" gate="G$1" pin="D1"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="116.84" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="C"/>
-<wire x1="63.5" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="106.68" x2="63.5" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
