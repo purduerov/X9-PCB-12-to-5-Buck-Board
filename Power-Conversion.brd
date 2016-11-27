@@ -1528,7 +1528,15 @@ design rules under a new name.</description>
 <signal name="GSCLK">
 <contactref element="U1" pad="13"/>
 <contactref element="U$8" pad="P$25"/>
-<wire x1="1.6764" y1="46.082" x2="4.71" y2="63.506" width="0" layer="19" extent="1-1"/>
+<wire x1="4.71" y1="63.506" x2="4.699" y2="63.506" width="0.254" layer="1"/>
+<wire x1="4.699" y1="63.506" x2="4.699" y2="62.103" width="0.254" layer="1"/>
+<wire x1="4.699" y1="62.103" x2="4.699" y2="55.88" width="0.254" layer="15"/>
+<wire x1="4.699" y1="55.88" x2="3.683" y2="54.864" width="0.254" layer="15"/>
+<wire x1="3.683" y1="54.864" x2="3.683" y2="47.117" width="0.254" layer="15"/>
+<via x="4.699" y="62.103" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<via x="3.683" y="47.117" extent="1-16" drill="0.2032" diameter="0.4572"/>
+<wire x1="3.683" y1="47.117" x2="2.648" y2="46.082" width="0.254" layer="1"/>
+<wire x1="2.648" y1="46.082" x2="1.6764" y2="46.082" width="0.254" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="U$8" pad="P$27"/>
