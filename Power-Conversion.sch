@@ -211,6 +211,10 @@
 <pad name="P$52" x="1.27" y="31.75" drill="1"/>
 <pad name="P$53" x="-1.27" y="34.29" drill="1"/>
 <pad name="P$54" x="1.27" y="34.29" drill="1"/>
+<wire x1="-47.752" y1="-40.386" x2="3.048" y2="-40.386" width="0.127" layer="51"/>
+<wire x1="3.048" y1="-40.386" x2="3.048" y2="35.814" width="0.127" layer="51"/>
+<wire x1="3.048" y1="35.814" x2="-47.752" y2="35.814" width="0.127" layer="51"/>
+<wire x1="-47.752" y1="35.814" x2="-47.752" y2="-40.386" width="0.127" layer="51"/>
 </package>
 <package name="SOT23-3">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -462,8 +466,8 @@
 <connect gate="G$1" pin="48V+" pad="P$26 P$27 P$28 P$29 P$30"/>
 <connect gate="G$1" pin="48V-" pad="P$21 P$22 P$23 P$24 P$25"/>
 <connect gate="G$1" pin="ON/OFF" pad="P$51"/>
-<connect gate="G$1" pin="SCL" pad="P$53"/>
-<connect gate="G$1" pin="SDA" pad="P$54"/>
+<connect gate="G$1" pin="SCL" pad="P$54"/>
+<connect gate="G$1" pin="SDA" pad="P$53"/>
 </connects>
 <technologies>
 <technology name=""/>
