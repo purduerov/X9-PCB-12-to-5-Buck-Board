@@ -2073,42 +2073,42 @@ Standard decoupling cap</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC1" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC1" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC1" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC1" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC2" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC2" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC2" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC2" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="F3" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC3" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC3" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC4" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC4" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="F5" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC5" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC5" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC6" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC6" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="F7" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC7" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC7" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC8" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC8" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="MotherboardParts" deviceset="ZENER-SOT23" device="" value="22V">
 <attribute name="PN-DIGI" value="BZX84C22LT1GOSCT-ND"/>
@@ -2127,12 +2127,12 @@ Standard decoupling cap</description>
 <part name="F2" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC9" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC9" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC10" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC10" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
-<part name="I2C_ESC10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
 <part name="U2" library="PowerComponents" deviceset="LM1085IS-3.3" device=""/>
@@ -2155,8 +2155,8 @@ Standard decoupling cap</description>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="I2C_ESC11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="I2C_ESC12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="PWM_ESC12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="F4" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC11" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC11" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
@@ -2193,42 +2193,42 @@ Standard decoupling cap</description>
 <instance part="GND3" gate="1" x="129.54" y="38.1"/>
 <instance part="V+_ESC1" gate="G$1" x="185.42" y="127"/>
 <instance part="V-_ESC1" gate="G$1" x="185.42" y="121.92"/>
-<instance part="I2C_ESC1" gate="G$1" x="388.62" y="78.74" rot="MR180"/>
+<instance part="PWM_ESC1" gate="G$1" x="388.62" y="78.74" rot="MR180"/>
 <instance part="GND4" gate="1" x="182.88" y="119.38"/>
 <instance part="P+7" gate="VCC" x="162.56" y="129.54"/>
 <instance part="V+_ESC2" gate="G$1" x="185.42" y="111.76"/>
 <instance part="V-_ESC2" gate="G$1" x="185.42" y="106.68"/>
-<instance part="I2C_ESC2" gate="G$1" x="401.32" y="73.66" rot="MR180"/>
+<instance part="PWM_ESC2" gate="G$1" x="401.32" y="73.66" rot="MR180"/>
 <instance part="GND5" gate="1" x="182.88" y="104.14"/>
 <instance part="F3" gate="G$1" x="167.64" y="96.52"/>
 <instance part="V+_ESC3" gate="G$1" x="185.42" y="96.52"/>
 <instance part="V-_ESC3" gate="G$1" x="185.42" y="91.44"/>
-<instance part="I2C_ESC3" gate="G$1" x="388.62" y="68.58" rot="MR180"/>
+<instance part="PWM_ESC3" gate="G$1" x="388.62" y="68.58" rot="MR180"/>
 <instance part="GND6" gate="1" x="182.88" y="88.9"/>
 <instance part="P+9" gate="VCC" x="162.56" y="99.06"/>
 <instance part="V+_ESC4" gate="G$1" x="185.42" y="81.28"/>
 <instance part="V-_ESC4" gate="G$1" x="185.42" y="76.2"/>
-<instance part="I2C_ESC4" gate="G$1" x="401.32" y="63.5" rot="MR180"/>
+<instance part="PWM_ESC4" gate="G$1" x="401.32" y="63.5" rot="MR180"/>
 <instance part="GND7" gate="1" x="182.88" y="73.66"/>
 <instance part="F5" gate="G$1" x="167.64" y="66.04"/>
 <instance part="V+_ESC5" gate="G$1" x="185.42" y="66.04"/>
 <instance part="V-_ESC5" gate="G$1" x="185.42" y="60.96"/>
-<instance part="I2C_ESC5" gate="G$1" x="388.62" y="58.42" rot="MR180"/>
+<instance part="PWM_ESC5" gate="G$1" x="388.62" y="58.42" rot="MR180"/>
 <instance part="GND8" gate="1" x="182.88" y="58.42"/>
 <instance part="P+11" gate="VCC" x="162.56" y="68.58"/>
 <instance part="V+_ESC6" gate="G$1" x="185.42" y="50.8"/>
 <instance part="V-_ESC6" gate="G$1" x="185.42" y="45.72"/>
-<instance part="I2C_ESC6" gate="G$1" x="401.32" y="53.34" rot="MR180"/>
+<instance part="PWM_ESC6" gate="G$1" x="401.32" y="53.34" rot="MR180"/>
 <instance part="GND9" gate="1" x="182.88" y="43.18"/>
 <instance part="F7" gate="G$1" x="167.64" y="35.56"/>
 <instance part="V+_ESC7" gate="G$1" x="185.42" y="35.56"/>
 <instance part="V-_ESC7" gate="G$1" x="185.42" y="30.48"/>
-<instance part="I2C_ESC7" gate="G$1" x="388.62" y="48.26" rot="MR180"/>
+<instance part="PWM_ESC7" gate="G$1" x="388.62" y="48.26" rot="MR180"/>
 <instance part="GND10" gate="1" x="182.88" y="27.94"/>
 <instance part="P+13" gate="VCC" x="162.56" y="38.1"/>
 <instance part="V+_ESC8" gate="G$1" x="185.42" y="20.32"/>
 <instance part="V-_ESC8" gate="G$1" x="185.42" y="15.24"/>
-<instance part="I2C_ESC8" gate="G$1" x="401.32" y="43.18" rot="MR180"/>
+<instance part="PWM_ESC8" gate="G$1" x="401.32" y="43.18" rot="MR180"/>
 <instance part="GND11" gate="1" x="182.88" y="12.7"/>
 <instance part="U$4" gate="G$1" x="35.56" y="111.76" rot="R90">
 <attribute name="PN-DIGI" x="35.56" y="111.76" size="1.778" layer="96" rot="R90" display="off"/>
@@ -2247,12 +2247,12 @@ Standard decoupling cap</description>
 <instance part="F2" gate="G$1" x="167.64" y="5.08"/>
 <instance part="V+_ESC9" gate="G$1" x="185.42" y="5.08"/>
 <instance part="V-_ESC9" gate="G$1" x="185.42" y="0"/>
-<instance part="I2C_ESC9" gate="G$1" x="467.36" y="43.18" rot="MR0"/>
+<instance part="PWM_ESC9" gate="G$1" x="467.36" y="43.18" rot="MR0"/>
 <instance part="GND12" gate="1" x="182.88" y="-2.54"/>
 <instance part="P+8" gate="VCC" x="162.56" y="7.62"/>
 <instance part="V+_ESC10" gate="G$1" x="185.42" y="-10.16"/>
 <instance part="V-_ESC10" gate="G$1" x="185.42" y="-15.24"/>
-<instance part="I2C_ESC10" gate="G$1" x="480.06" y="48.26" rot="MR0"/>
+<instance part="PWM_ESC10" gate="G$1" x="480.06" y="48.26" rot="MR0"/>
 <instance part="GND13" gate="1" x="182.88" y="-17.78"/>
 <instance part="U1" gate="U$1" x="302.26" y="86.36"/>
 <instance part="U2" gate="A" x="223.52" y="124.46"/>
@@ -2275,8 +2275,8 @@ Standard decoupling cap</description>
 <instance part="GND18" gate="1" x="363.22" y="111.76"/>
 <instance part="C3" gate="G$1" x="474.98" y="106.68"/>
 <instance part="GND16" gate="1" x="396.24" y="81.28" rot="MR0"/>
-<instance part="I2C_ESC11" gate="G$1" x="467.36" y="53.34" rot="MR0"/>
-<instance part="I2C_ESC12" gate="G$1" x="480.06" y="58.42" rot="MR0"/>
+<instance part="PWM_ESC11" gate="G$1" x="467.36" y="53.34" rot="MR0"/>
+<instance part="PWM_ESC12" gate="G$1" x="480.06" y="58.42" rot="MR0"/>
 <instance part="F4" gate="G$1" x="167.64" y="-25.4"/>
 <instance part="V+_ESC11" gate="G$1" x="185.42" y="-25.4"/>
 <instance part="V-_ESC11" gate="G$1" x="185.42" y="-30.48"/>
@@ -2716,70 +2716,70 @@ Standard decoupling cap</description>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT0"/>
-<pinref part="I2C_ESC1" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC1" gate="G$1" pin="1"/>
 <wire x1="396.24" y1="78.74" x2="416.56" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT1"/>
-<pinref part="I2C_ESC2" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC2" gate="G$1" pin="1"/>
 <wire x1="408.94" y1="73.66" x2="416.56" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT2"/>
-<pinref part="I2C_ESC3" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC3" gate="G$1" pin="1"/>
 <wire x1="396.24" y1="68.58" x2="416.56" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT3"/>
-<pinref part="I2C_ESC4" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC4" gate="G$1" pin="1"/>
 <wire x1="408.94" y1="63.5" x2="416.56" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT4"/>
-<pinref part="I2C_ESC5" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC5" gate="G$1" pin="1"/>
 <wire x1="396.24" y1="58.42" x2="416.56" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT5"/>
-<pinref part="I2C_ESC6" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC6" gate="G$1" pin="1"/>
 <wire x1="408.94" y1="53.34" x2="416.56" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT6"/>
-<pinref part="I2C_ESC7" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC7" gate="G$1" pin="1"/>
 <wire x1="396.24" y1="48.26" x2="416.56" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT7"/>
-<pinref part="I2C_ESC8" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC8" gate="G$1" pin="1"/>
 <wire x1="408.94" y1="43.18" x2="416.56" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT8"/>
-<pinref part="I2C_ESC9" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC9" gate="G$1" pin="1"/>
 <wire x1="459.74" y1="43.18" x2="452.12" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT9"/>
-<pinref part="I2C_ESC10" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC10" gate="G$1" pin="1"/>
 <wire x1="472.44" y1="48.26" x2="452.12" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2862,14 +2862,14 @@ Standard decoupling cap</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT10"/>
-<pinref part="I2C_ESC11" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC11" gate="G$1" pin="1"/>
 <wire x1="452.12" y1="53.34" x2="459.74" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="OUT11"/>
-<pinref part="I2C_ESC12" gate="G$1" pin="1"/>
+<pinref part="PWM_ESC12" gate="G$1" pin="1"/>
 <wire x1="452.12" y1="58.42" x2="472.44" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
