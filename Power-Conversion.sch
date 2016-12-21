@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -146,16 +146,6 @@
 <libraries>
 <library name="MotherboardParts">
 <packages>
-<package name="KEYSTONE_FUSE_3587">
-<smd name="P$1" x="-6.731" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$2" x="-6.731" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$3" x="6.731" y="-3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<smd name="P$4" x="6.731" y="3.0353" dx="1.5748" dy="2.8194" layer="1"/>
-<wire x1="-8.89" y1="5.08" x2="8.89" y2="5.08" width="0.127" layer="21"/>
-<wire x1="8.89" y1="5.08" x2="8.89" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="8.89" y1="-5.08" x2="-8.89" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-8.89" y1="-5.08" x2="-8.89" y2="5.08" width="0.127" layer="21"/>
-</package>
 <package name="POWER-BRICK-CONNECTOR">
 <pad name="P$1" x="-1.27" y="-34.29" drill="1"/>
 <pad name="P$2" x="1.27" y="-34.29" drill="1"/>
@@ -211,10 +201,6 @@
 <pad name="P$52" x="1.27" y="31.75" drill="1"/>
 <pad name="P$53" x="-1.27" y="34.29" drill="1"/>
 <pad name="P$54" x="1.27" y="34.29" drill="1"/>
-<wire x1="-47.752" y1="-40.386" x2="3.048" y2="-40.386" width="0.127" layer="51"/>
-<wire x1="3.048" y1="-40.386" x2="3.048" y2="35.814" width="0.127" layer="51"/>
-<wire x1="3.048" y1="35.814" x2="-47.752" y2="35.814" width="0.127" layer="51"/>
-<wire x1="-47.752" y1="35.814" x2="-47.752" y2="-40.386" width="0.127" layer="51"/>
 </package>
 <package name="SOT23-3">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -327,12 +313,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="FUSE">
-<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
-<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-</symbol>
 <symbol name="POWER-BRICK-CONNECTOR">
 <pin name="48V+" x="12.7" y="10.16" length="middle" rot="R180"/>
 <pin name="48V-" x="12.7" y="5.08" length="middle" rot="R180"/>
@@ -438,22 +418,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="KEYSTONE_FUSE_3587" prefix="F" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KEYSTONE_FUSE_3587">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
-<connect gate="G$1" pin="P$2" pad="P$3 P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="POWER-BRICK-CONNECTOR">
 <gates>
 <gate name="G$1" symbol="POWER-BRICK-CONNECTOR" x="0" y="0"/>
@@ -1837,6 +1801,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-4.4704" y="5.2578" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.8166" y="-12.7508" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="PTC-2920">
+<wire x1="-2.4" y1="2" x2="2.4" y2="2" width="0.127" layer="51"/>
+<wire x1="2.4" y1="2" x2="2.4" y2="-2" width="0.127" layer="51"/>
+<wire x1="2.4" y1="-2" x2="-2.4" y2="-2" width="0.127" layer="51"/>
+<wire x1="-2.4" y1="-2" x2="-2.4" y2="2" width="0.127" layer="51"/>
+<wire x1="0.635" y1="-0.762" x2="-0.635" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.762" x2="0.635" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="-2.343" y1="-2.366" x2="1.504" y2="2.366" width="0.127" layer="51"/>
+<wire x1="1.504" y1="2.366" x2="2.393" y2="2.366" width="0.127" layer="51"/>
+<smd name="1" x="-3.7" y="0" dx="2.3" dy="5.6" layer="1"/>
+<smd name="2" x="3.7" y="0" dx="2.3" dy="5.6" layer="1"/>
+<text x="0" y="3.302" size="1.016" layer="25" font="vector" align="center">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LM1085IS-3.3">
@@ -1850,6 +1827,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="15.24" y1="5.08" x2="-15.24" y2="5.08" width="0.1524" layer="94"/>
 <text x="-4.2926" y="7.62" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.4102" y="-14.3002" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+<symbol name="PTC">
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="3.048" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.302" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1874,6 +1863,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PACKAGE" value="TO-263-3" constant="no"/>
 <attribute name="SUPPLIER" value="National Semiconductor" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTC(2920L)" prefix="F" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTC-2920">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2059,7 +2064,6 @@ Standard decoupling cap</description>
 </class>
 </classes>
 <parts>
-<part name="F1" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="U$1" library="MotherboardParts" deviceset="POWER-BRICK-CONNECTOR" device=""/>
 <part name="U$2" library="MotherboardParts" deviceset="POWER-BRICK-CONNECTOR" device=""/>
 <part name="U$3" library="MotherboardParts" deviceset="POWER-BRICK-CONNECTOR" device=""/>
@@ -2084,32 +2088,26 @@ Standard decoupling cap</description>
 <part name="V-_ESC2" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC2" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="F3" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC3" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC3" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC4" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC4" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="F5" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC5" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC5" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="P+11" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC6" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC6" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="F7" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC7" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC7" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="P+13" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC8" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC8" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
@@ -2128,12 +2126,10 @@ Standard decoupling cap</description>
 <part name="P-4" library="supply1" deviceset="V-" device=""/>
 <part name="P-5" library="supply1" deviceset="V-" device=""/>
 <part name="P-6" library="supply1" deviceset="V-" device=""/>
-<part name="F2" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC9" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC9" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC10" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC10" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="PWM_ESC10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
@@ -2161,11 +2157,9 @@ Standard decoupling cap</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="PWM_ESC11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="PWM_ESC12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="F4" library="MotherboardParts" deviceset="KEYSTONE_FUSE_3587" device=""/>
 <part name="V+_ESC11" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC11" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="P+18" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC12" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="V-_ESC12" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
@@ -2173,13 +2167,24 @@ Standard decoupling cap</description>
 <part name="V-_CONN" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 <part name="P+19" library="supply1" deviceset="V+" device=""/>
 <part name="P-7" library="supply1" deviceset="V-" device=""/>
+<part name="F6" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F8" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F1" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F2" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F3" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F4" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F5" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F7" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F9" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F10" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F11" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
+<part name="F12" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="F1" gate="G$1" x="167.64" y="127"/>
 <instance part="U$1" gate="G$1" x="116.84" y="50.8"/>
 <instance part="U$2" gate="G$1" x="116.84" y="83.82"/>
 <instance part="U$3" gate="G$1" x="116.84" y="116.84"/>
@@ -2198,42 +2203,36 @@ Standard decoupling cap</description>
 <instance part="V+_ESC1" gate="G$1" x="185.42" y="127"/>
 <instance part="V-_ESC1" gate="G$1" x="185.42" y="121.92"/>
 <instance part="PWM_ESC1" gate="G$1" x="388.62" y="78.74" rot="MR180"/>
-<instance part="GND4" gate="1" x="182.88" y="119.38"/>
-<instance part="P+7" gate="VCC" x="162.56" y="129.54"/>
+<instance part="GND4" gate="1" x="180.34" y="119.38"/>
+<instance part="P+7" gate="VCC" x="160.02" y="137.16"/>
 <instance part="V+_ESC2" gate="G$1" x="185.42" y="111.76"/>
 <instance part="V-_ESC2" gate="G$1" x="185.42" y="106.68"/>
 <instance part="PWM_ESC2" gate="G$1" x="401.32" y="73.66" rot="MR180"/>
-<instance part="GND5" gate="1" x="182.88" y="104.14"/>
-<instance part="F3" gate="G$1" x="167.64" y="96.52"/>
+<instance part="GND5" gate="1" x="180.34" y="104.14"/>
 <instance part="V+_ESC3" gate="G$1" x="185.42" y="96.52"/>
 <instance part="V-_ESC3" gate="G$1" x="185.42" y="91.44"/>
 <instance part="PWM_ESC3" gate="G$1" x="388.62" y="68.58" rot="MR180"/>
-<instance part="GND6" gate="1" x="182.88" y="88.9"/>
-<instance part="P+9" gate="VCC" x="162.56" y="99.06"/>
+<instance part="GND6" gate="1" x="180.34" y="88.9"/>
 <instance part="V+_ESC4" gate="G$1" x="185.42" y="81.28"/>
 <instance part="V-_ESC4" gate="G$1" x="185.42" y="76.2"/>
 <instance part="PWM_ESC4" gate="G$1" x="401.32" y="63.5" rot="MR180"/>
-<instance part="GND7" gate="1" x="182.88" y="73.66"/>
-<instance part="F5" gate="G$1" x="167.64" y="66.04"/>
+<instance part="GND7" gate="1" x="180.34" y="73.66"/>
 <instance part="V+_ESC5" gate="G$1" x="185.42" y="66.04"/>
 <instance part="V-_ESC5" gate="G$1" x="185.42" y="60.96"/>
 <instance part="PWM_ESC5" gate="G$1" x="388.62" y="58.42" rot="MR180"/>
-<instance part="GND8" gate="1" x="182.88" y="58.42"/>
-<instance part="P+11" gate="VCC" x="162.56" y="68.58"/>
+<instance part="GND8" gate="1" x="180.34" y="58.42"/>
 <instance part="V+_ESC6" gate="G$1" x="185.42" y="50.8"/>
 <instance part="V-_ESC6" gate="G$1" x="185.42" y="45.72"/>
 <instance part="PWM_ESC6" gate="G$1" x="401.32" y="53.34" rot="MR180"/>
-<instance part="GND9" gate="1" x="182.88" y="43.18"/>
-<instance part="F7" gate="G$1" x="167.64" y="35.56"/>
+<instance part="GND9" gate="1" x="180.34" y="43.18"/>
 <instance part="V+_ESC7" gate="G$1" x="185.42" y="35.56"/>
 <instance part="V-_ESC7" gate="G$1" x="185.42" y="30.48"/>
 <instance part="PWM_ESC7" gate="G$1" x="388.62" y="48.26" rot="MR180"/>
-<instance part="GND10" gate="1" x="182.88" y="27.94"/>
-<instance part="P+13" gate="VCC" x="162.56" y="38.1"/>
+<instance part="GND10" gate="1" x="180.34" y="27.94"/>
 <instance part="V+_ESC8" gate="G$1" x="185.42" y="20.32"/>
 <instance part="V-_ESC8" gate="G$1" x="185.42" y="15.24"/>
 <instance part="PWM_ESC8" gate="G$1" x="401.32" y="43.18" rot="MR180"/>
-<instance part="GND11" gate="1" x="182.88" y="12.7"/>
+<instance part="GND11" gate="1" x="180.34" y="12.7"/>
 <instance part="U$4" gate="G$1" x="35.56" y="111.76" rot="R90">
 <attribute name="PN-DIGI" x="35.56" y="111.76" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
@@ -2248,16 +2247,14 @@ Standard decoupling cap</description>
 <instance part="P-4" gate="1" x="35.56" y="93.98"/>
 <instance part="P-5" gate="1" x="48.26" y="93.98"/>
 <instance part="P-6" gate="1" x="63.5" y="93.98"/>
-<instance part="F2" gate="G$1" x="167.64" y="5.08"/>
 <instance part="V+_ESC9" gate="G$1" x="185.42" y="5.08"/>
 <instance part="V-_ESC9" gate="G$1" x="185.42" y="0"/>
 <instance part="PWM_ESC9" gate="G$1" x="467.36" y="43.18" rot="MR0"/>
-<instance part="GND12" gate="1" x="182.88" y="-2.54"/>
-<instance part="P+8" gate="VCC" x="162.56" y="7.62"/>
+<instance part="GND12" gate="1" x="180.34" y="-2.54"/>
 <instance part="V+_ESC10" gate="G$1" x="185.42" y="-10.16"/>
 <instance part="V-_ESC10" gate="G$1" x="185.42" y="-15.24"/>
 <instance part="PWM_ESC10" gate="G$1" x="480.06" y="48.26" rot="MR0"/>
-<instance part="GND13" gate="1" x="182.88" y="-17.78"/>
+<instance part="GND13" gate="1" x="180.34" y="-17.78"/>
 <instance part="U1" gate="U$1" x="302.26" y="86.36"/>
 <instance part="U2" gate="A" x="223.52" y="124.46"/>
 <instance part="P+10" gate="VCC" x="203.2" y="127"/>
@@ -2281,18 +2278,28 @@ Standard decoupling cap</description>
 <instance part="GND16" gate="1" x="396.24" y="81.28" rot="MR0"/>
 <instance part="PWM_ESC11" gate="G$1" x="467.36" y="53.34" rot="MR0"/>
 <instance part="PWM_ESC12" gate="G$1" x="480.06" y="58.42" rot="MR0"/>
-<instance part="F4" gate="G$1" x="167.64" y="-25.4"/>
 <instance part="V+_ESC11" gate="G$1" x="185.42" y="-25.4"/>
 <instance part="V-_ESC11" gate="G$1" x="185.42" y="-30.48"/>
-<instance part="GND19" gate="1" x="182.88" y="-33.02"/>
-<instance part="P+18" gate="VCC" x="162.56" y="-22.86"/>
+<instance part="GND19" gate="1" x="180.34" y="-33.02"/>
 <instance part="V+_ESC12" gate="G$1" x="185.42" y="-40.64"/>
 <instance part="V-_ESC12" gate="G$1" x="185.42" y="-45.72"/>
-<instance part="GND20" gate="1" x="182.88" y="-48.26"/>
+<instance part="GND20" gate="1" x="180.34" y="-48.26"/>
 <instance part="V+_CONN" gate="G$1" x="45.72" y="76.2" rot="R180"/>
 <instance part="V-_CONN" gate="G$1" x="45.72" y="71.12" rot="R180"/>
 <instance part="P+19" gate="1" x="55.88" y="78.74"/>
 <instance part="P-7" gate="1" x="55.88" y="68.58"/>
+<instance part="F6" gate="G$1" x="170.18" y="50.8" rot="R180"/>
+<instance part="F8" gate="G$1" x="170.18" y="20.32" rot="R180"/>
+<instance part="F1" gate="G$1" x="170.18" y="127" rot="R180"/>
+<instance part="F2" gate="G$1" x="170.18" y="111.76" rot="R180"/>
+<instance part="F3" gate="G$1" x="170.18" y="96.52" rot="R180"/>
+<instance part="F4" gate="G$1" x="170.18" y="81.28" rot="R180"/>
+<instance part="F5" gate="G$1" x="170.18" y="66.04" rot="R180"/>
+<instance part="F7" gate="G$1" x="170.18" y="35.56" rot="R180"/>
+<instance part="F9" gate="G$1" x="170.18" y="5.08" rot="R180"/>
+<instance part="F10" gate="G$1" x="170.18" y="-10.16" rot="R180"/>
+<instance part="F11" gate="G$1" x="170.18" y="-25.4" rot="R180"/>
+<instance part="F12" gate="G$1" x="170.18" y="-40.64" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2372,32 +2379,58 @@ Standard decoupling cap</description>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="F1" gate="G$1" pin="P$1"/>
-<pinref part="P+7" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="F3" gate="G$1" pin="P$1"/>
-<pinref part="P+9" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="F5" gate="G$1" pin="P$1"/>
-<pinref part="P+11" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="F7" gate="G$1" pin="P$1"/>
-<pinref part="P+13" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="F2" gate="G$1" pin="P$1"/>
-<pinref part="P+8" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="U2" gate="A" pin="IN"/>
 <pinref part="P+10" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="F4" gate="G$1" pin="P$1"/>
-<pinref part="P+18" gate="VCC" pin="VCC"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<wire x1="160.02" y1="-40.64" x2="160.02" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="-25.4" x2="160.02" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-10.16" x2="160.02" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="5.08" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="20.32" x2="160.02" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="35.56" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="50.8" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="66.04" x2="160.02" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="81.28" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="96.52" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="111.76" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="127" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<junction x="160.02" y="127"/>
+<pinref part="F2" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
+<junction x="160.02" y="111.76"/>
+<pinref part="F3" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<junction x="160.02" y="96.52"/>
+<pinref part="F5" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
+<junction x="160.02" y="66.04"/>
+<pinref part="F6" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<junction x="160.02" y="50.8"/>
+<pinref part="F7" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="35.56" x2="160.02" y2="35.56" width="0.1524" layer="91"/>
+<junction x="160.02" y="35.56"/>
+<pinref part="F8" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="20.32" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
+<junction x="160.02" y="20.32"/>
+<pinref part="F9" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="5.08" x2="160.02" y2="5.08" width="0.1524" layer="91"/>
+<junction x="160.02" y="5.08"/>
+<pinref part="F10" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="-10.16" x2="160.02" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="160.02" y="-10.16"/>
+<pinref part="F11" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="-25.4" x2="160.02" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="160.02" y="-25.4"/>
+<pinref part="F12" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="-40.64" x2="160.02" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="F4" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="81.28" x2="162.56" y2="81.28" width="0.1524" layer="91"/>
+<junction x="160.02" y="81.28"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2416,42 +2449,52 @@ Standard decoupling cap</description>
 <segment>
 <pinref part="V-_ESC1" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="180.34" y1="121.92" x2="182.88" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC2" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="180.34" y1="106.68" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC3" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="180.34" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC4" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="180.34" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC5" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="180.34" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC6" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="180.34" y1="45.72" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC7" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="180.34" y1="30.48" x2="182.88" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC8" gate="G$1" pin="1"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="180.34" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC9" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="180.34" y1="0" x2="182.88" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC10" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="180.34" y1="-15.24" x2="182.88" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="ADJ/GND"/>
@@ -2499,10 +2542,12 @@ Standard decoupling cap</description>
 <segment>
 <pinref part="V-_ESC11" gate="G$1" pin="1"/>
 <pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="180.34" y1="-30.48" x2="182.88" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V-_ESC12" gate="G$1" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="180.34" y1="-45.72" x2="182.88" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -2549,54 +2594,6 @@ Standard decoupling cap</description>
 <label x="335.28" y="106.68" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="V+_ESC1" gate="G$1" pin="1"/>
-<pinref part="F1" gate="G$1" pin="P$2"/>
-<wire x1="172.72" y1="127" x2="175.26" y2="127" width="0.1524" layer="91"/>
-<pinref part="V+_ESC2" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="127" x2="182.88" y2="127" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="127" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
-<junction x="175.26" y="127"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="V+_ESC3" gate="G$1" pin="1"/>
-<pinref part="F3" gate="G$1" pin="P$2"/>
-<wire x1="172.72" y1="96.52" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="V+_ESC4" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="96.52" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<junction x="175.26" y="96.52"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="V+_ESC5" gate="G$1" pin="1"/>
-<pinref part="F5" gate="G$1" pin="P$2"/>
-<wire x1="172.72" y1="66.04" x2="175.26" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="V+_ESC6" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="66.04" x2="175.26" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
-<junction x="175.26" y="66.04"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="V+_ESC7" gate="G$1" pin="1"/>
-<pinref part="F7" gate="G$1" pin="P$2"/>
-<wire x1="172.72" y1="35.56" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="V+_ESC8" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="35.56" x2="182.88" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="35.56" x2="175.26" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="20.32" x2="182.88" y2="20.32" width="0.1524" layer="91"/>
-<junction x="175.26" y="35.56"/>
-</segment>
-</net>
 <net name="ONOFF" class="0">
 <segment>
 <label x="91.44" y="116.84" size="1.778" layer="95"/>
@@ -2634,18 +2631,6 @@ Standard decoupling cap</description>
 <wire x1="35.56" y1="106.68" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="G"/>
 <wire x1="40.64" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="V+_ESC9" gate="G$1" pin="1"/>
-<pinref part="F2" gate="G$1" pin="P$2"/>
-<wire x1="172.72" y1="5.08" x2="175.26" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="V+_ESC10" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="5.08" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="5.08" x2="175.26" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="-10.16" x2="182.88" y2="-10.16" width="0.1524" layer="91"/>
-<junction x="175.26" y="5.08"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -2877,16 +2862,88 @@ Standard decoupling cap</description>
 <wire x1="452.12" y1="58.42" x2="472.44" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="V+_ESC1" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="127" x2="182.88" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="F2" gate="G$1" pin="1"/>
+<pinref part="V+_ESC2" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="F3" gate="G$1" pin="1"/>
+<pinref part="V+_ESC3" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$6" class="0">
 <segment>
+<pinref part="F5" gate="G$1" pin="1"/>
+<pinref part="V+_ESC5" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="66.04" x2="182.88" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="F6" gate="G$1" pin="1"/>
+<pinref part="V+_ESC6" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="F7" gate="G$1" pin="1"/>
+<pinref part="V+_ESC7" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="35.56" x2="182.88" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="F8" gate="G$1" pin="1"/>
+<pinref part="V+_ESC8" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="20.32" x2="182.88" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="F9" gate="G$1" pin="1"/>
+<pinref part="V+_ESC9" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="5.08" x2="182.88" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="F10" gate="G$1" pin="1"/>
+<pinref part="V+_ESC10" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="-10.16" x2="182.88" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="F11" gate="G$1" pin="1"/>
 <pinref part="V+_ESC11" gate="G$1" pin="1"/>
-<pinref part="F4" gate="G$1" pin="P$2"/>
-<wire x1="172.72" y1="-25.4" x2="175.26" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="V+_ESC12" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="-25.4" x2="182.88" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="-25.4" x2="175.26" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="F12" gate="G$1" pin="1"/>
+<pinref part="V+_ESC12" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="-40.64" x2="182.88" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="175.26" y="-25.4"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="F4" gate="G$1" pin="1"/>
+<pinref part="V+_ESC4" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
