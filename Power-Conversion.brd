@@ -1130,6 +1130,12 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="DIGIKEY" value="FDN340PCT-ND" x="131.064" y="30.226" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D6" library="DiscreteComponents" package="DO-214AC" value="" x="131.826" y="29.464" rot="R270"/>
+<element name="R6" library="SparkFun-Resistors" package="0603-RES" value="10k" x="121.412" y="53.594" rot="R270">
+<attribute name="PROD_ID" value="RES-07869" x="121.412" y="53.594" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R8" library="SparkFun-Resistors" package="0603-RES" value="10k" x="118.364" y="59.69" rot="R180">
+<attribute name="PROD_ID" value="RES-07869" x="118.364" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="V+">
@@ -1627,7 +1633,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="121.289" y1="59.051" x2="124.46" y2="55.88" width="0.3048" layer="1"/>
 <wire x1="124.46" y1="55.88" x2="135.382" y2="55.88" width="0.3048" layer="1"/>
 <wire x1="121.289" y1="59.051" x2="120.277" y2="58.039" width="0.3048" layer="1"/>
-<wire x1="120.277" y1="58.039" x2="114.173" y2="58.039" width="0.3048" layer="1"/>
+<wire x1="120.277" y1="58.039" x2="119.38" y2="58.039" width="0.3048" layer="1"/>
 <via x="121.285" y="59.055" extent="1-16" drill="0.6"/>
 <contactref element="CAMDATA2" pad="2"/>
 <wire x1="148.844" y1="59.69" x2="145.796" y2="56.642" width="0.3048" layer="1"/>
@@ -1638,6 +1644,11 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="121.289" y1="59.051" x2="121.285" y2="59.055" width="0.3048" layer="1"/>
 <wire x1="148.844" y1="59.69" x2="159.585" y2="59.69" width="0.3048" layer="1"/>
 <wire x1="159.585" y1="59.69" x2="159.645" y2="59.75" width="0.3048" layer="1"/>
+<contactref element="R8" pad="1"/>
+<wire x1="119.214" y1="59.69" x2="119.214" y2="58.205" width="0.3048" layer="1"/>
+<wire x1="119.214" y1="58.205" x2="119.38" y2="58.039" width="0.3048" layer="1"/>
+<wire x1="114.173" y1="58.039" x2="119.048" y2="58.039" width="0.3048" layer="1"/>
+<wire x1="119.048" y1="58.039" x2="119.214" y2="58.205" width="0.3048" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="27"/>
@@ -1670,6 +1681,9 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="124.46" y1="58.166" x2="124.079" y2="58.547" width="0.3048" layer="2"/>
 <wire x1="149.352" y1="62.23" x2="159.165" y2="62.23" width="0.3048" layer="1"/>
 <wire x1="159.165" y1="62.23" x2="159.645" y2="61.75" width="0.3048" layer="1"/>
+<contactref element="R6" pad="1"/>
+<wire x1="121.412" y1="54.444" x2="121.412" y2="54.864" width="0.4064" layer="1"/>
+<wire x1="121.412" y1="54.864" x2="120.65" y2="55.626" width="0.4064" layer="1"/>
 </signal>
 <signal name="ONOFF">
 <contactref element="U$3" pad="P$51"/>
@@ -1783,6 +1797,12 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="123.952" y1="31.1658" x2="127.9398" y2="31.1658" width="0.8128" layer="1"/>
 <wire x1="127.9398" y1="31.1658" x2="128.27" y2="31.496" width="0.8128" layer="1"/>
 <wire x1="128.27" y1="31.496" x2="128.27" y2="37.084" width="0.8128" layer="1"/>
+<contactref element="R6" pad="2"/>
+<contactref element="R8" pad="2"/>
+<via x="115.824" y="59.69" extent="1-16" drill="0.6"/>
+<via x="121.412" y="51.308" extent="1-16" drill="0.6"/>
+<wire x1="117.514" y1="59.69" x2="115.824" y2="59.69" width="0.4064" layer="1"/>
+<wire x1="121.412" y1="52.744" x2="121.412" y2="51.308" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U1" pad="29"/>
