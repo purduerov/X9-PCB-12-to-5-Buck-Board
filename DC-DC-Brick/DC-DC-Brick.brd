@@ -8,13 +8,13 @@
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
@@ -26,13 +26,13 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
@@ -80,6 +80,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -4035,25 +4037,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
-<library name="ExtendedPadCap">
-<packages>
-<package name="MODIFIED-NICHICON-UX-8X10">
-<description>This Capactior is a larger version of the capacitor from Package: NICHICON-UX-8X10, Library: ux-capacitor. This newer version has the same silkscreen demensions while making the copper pads larger for soldering.</description>
-<wire x1="0" y1="0" x2="0" y2="8.382" width="0.127" layer="21"/>
-<wire x1="8.382" y1="8.382" x2="8.382" y2="0" width="0.127" layer="21"/>
-<wire x1="8.382" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<text x="-1.27" y="8.89" size="1.016" layer="21">&gt;value</text>
-<wire x1="0" y1="8.382" x2="8.382" y2="8.382" width="0.127" layer="21"/>
-<smd name="P$3" x="4.318" y="7.874" dx="3.81" dy="2.032" layer="1" rot="R90"/>
-<smd name="P$1" x="4.318" y="0.254" dx="3.81" dy="2.032" layer="1" rot="R90"/>
-<wire x1="0.254" y1="7.366" x2="1.016" y2="8.128" width="0.127" layer="21"/>
-<wire x1="7.366" y1="8.128" x2="8.128" y2="7.366" width="0.127" layer="21"/>
-<wire x1="6.604" y1="7.874" x2="6.604" y2="6.858" width="0.127" layer="21"/>
-<wire x1="6.096" y1="7.366" x2="7.112" y2="7.366" width="0.127" layer="21"/>
-<wire x1="6.096" y1="0.762" x2="7.112" y2="0.762" width="0.127" layer="21"/>
-</package>
-</packages>
-</library>
 <library name="SparkFun-LED">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find discrete LEDs for illumination or indication, but no displays.&lt;br&gt;&lt;br&gt;
@@ -4145,6 +4128,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="-27" y="-16" radius="0.4242625" width="0.127" layer="21"/>
 <text x="-3" y="2" size="1.27" layer="27">&gt;Value</text>
 <text x="-3" y="-3" size="1.27" layer="25">&gt;Name</text>
+</package>
+<package name="MODIFIED-NICHICON-UX-8X10">
+<description>This Capactior is a larger version of the capacitor from Package: NICHICON-UX-8X10, Library: ux-capacitor. This newer version has the same silkscreen demensions while making the copper pads larger for soldering.</description>
+<wire x1="0" y1="0" x2="0" y2="8.382" width="0.127" layer="21"/>
+<wire x1="8.382" y1="8.382" x2="8.382" y2="0" width="0.127" layer="21"/>
+<wire x1="8.382" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="-1.27" y="8.89" size="1.016" layer="21">&gt;value</text>
+<wire x1="0" y1="8.382" x2="8.382" y2="8.382" width="0.127" layer="21"/>
+<smd name="P$3" x="4.318" y="8.382" dx="4.826" dy="2.032" layer="1" rot="R90"/>
+<smd name="P$1" x="4.318" y="-0.254" dx="4.826" dy="2.032" layer="1" rot="R90"/>
+<wire x1="0.254" y1="7.366" x2="1.016" y2="8.128" width="0.127" layer="21"/>
+<wire x1="7.366" y1="8.128" x2="8.128" y2="7.366" width="0.127" layer="21"/>
+<wire x1="6.604" y1="7.874" x2="6.604" y2="6.858" width="0.127" layer="21"/>
+<wire x1="6.096" y1="7.366" x2="7.112" y2="7.366" width="0.127" layer="21"/>
+<wire x1="6.096" y1="0.762" x2="7.112" y2="0.762" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -4421,9 +4419,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.0068" y="48.768" size="1.27" layer="25"/>
 <attribute name="VALUE" x="32.7152" y="48.895" size="1.27" layer="27"/>
 </element>
-<element name="C22V1" library="ExtendedPadCap" package="MODIFIED-NICHICON-UX-8X10" value="EXTENDED_PAD_CAPACITOR" x="28.956" y="32.004" smashed="yes" rot="R90"/>
-<element name="C22V5" library="ExtendedPadCap" package="MODIFIED-NICHICON-UX-8X10" value="EXTENDED_PAD_CAPACITOR" x="28.956" y="23.114" smashed="yes" rot="R90"/>
-<element name="C22V6" library="ExtendedPadCap" package="MODIFIED-NICHICON-UX-8X10" value="EXTENDED_PAD_CAPACITOR" x="28.956" y="14.224" smashed="yes" rot="R90"/>
+<element name="C22V1" library="PowerComponents" package="MODIFIED-NICHICON-UX-8X10" value="EXTENDED_PAD_CAPACITOR" x="28.956" y="32.004" smashed="yes" rot="R90"/>
+<element name="C22V5" library="PowerComponents" package="MODIFIED-NICHICON-UX-8X10" value="EXTENDED_PAD_CAPACITOR" x="28.956" y="23.114" smashed="yes" rot="R90"/>
+<element name="C22V6" library="PowerComponents" package="MODIFIED-NICHICON-UX-8X10" value="EXTENDED_PAD_CAPACITOR" x="28.956" y="14.224" smashed="yes" rot="R90"/>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="GREEN" x="24.13" y="55.88" rot="R270">
 <attribute name="PROD_ID" value="DIO-00821" x="24.13" y="55.88" size="1.778" layer="27" rot="R270" display="off"/>
 </element>

@@ -14653,6 +14653,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="R9" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0603" value="470"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0603" value="470"/>
+<part name="LED3" library="SparkFun" deviceset="LED" device="0603" value="Red"/>
+<part name="LED4" library="SparkFun" deviceset="LED" device="0603" value="Green"/>
+<part name="P+8" library="supply1" deviceset="VCC" device=""/>
+<part name="P+9" library="supply1" deviceset="V+" device=""/>
+<part name="P-8" library="supply1" deviceset="V-" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14853,6 +14861,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="C4" gate="G$1" x="60.96" y="485.14"/>
 <instance part="GND14" gate="1" x="60.96" y="477.52"/>
 <instance part="R9" gate="G$1" x="76.2" y="482.6" rot="R180"/>
+<instance part="R10" gate="G$1" x="228.6" y="172.72" rot="R90"/>
+<instance part="R11" gate="G$1" x="238.76" y="172.72" rot="R90"/>
+<instance part="LED3" gate="G$1" x="228.6" y="162.56"/>
+<instance part="LED4" gate="G$1" x="238.76" y="162.56"/>
+<instance part="P+8" gate="VCC" x="228.6" y="187.96"/>
+<instance part="P+9" gate="1" x="238.76" y="187.96"/>
+<instance part="P-8" gate="1" x="238.76" y="149.86"/>
+<instance part="GND18" gate="1" x="228.6" y="149.86"/>
 </instances>
 <busses>
 </busses>
@@ -14883,6 +14899,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="V+_CONN" gate="G$1" pin="1"/>
 <pinref part="P+19" gate="1" pin="V+"/>
 <wire x1="53.34" y1="137.16" x2="45.72" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+9" gate="1" pin="V+"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="185.42" x2="238.76" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V-" class="0">
@@ -14916,6 +14937,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="V-_CONN" gate="G$1" pin="1"/>
 <pinref part="P-7" gate="1" pin="V-"/>
 <wire x1="53.34" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="P-8" gate="1" pin="V-"/>
+<wire x1="238.76" y1="157.48" x2="238.76" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -15034,6 +15060,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="238.76" y="226.06"/>
 <pinref part="P+23" gate="VCC" pin="VCC"/>
 <wire x1="228.6" y1="238.76" x2="228.6" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="185.42" x2="228.6" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -15319,6 +15350,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="60.96" y1="482.6" x2="60.96" y2="480.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="228.6" y1="157.48" x2="228.6" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -15957,6 +15993,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="U5" gate="G$1" pin="RESET"/>
 <wire x1="81.28" y1="482.6" x2="83.82" y2="482.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<wire x1="228.6" y1="167.64" x2="228.6" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<wire x1="238.76" y1="167.64" x2="238.76" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>

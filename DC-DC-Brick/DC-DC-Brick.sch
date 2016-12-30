@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -80,6 +80,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -168,6 +170,21 @@
 <text x="-3" y="2" size="1.27" layer="27">&gt;Value</text>
 <text x="-3" y="-3" size="1.27" layer="25">&gt;Name</text>
 </package>
+<package name="MODIFIED-NICHICON-UX-8X10">
+<description>This Capactior is a larger version of the capacitor from Package: NICHICON-UX-8X10, Library: ux-capacitor. This newer version has the same silkscreen demensions while making the copper pads larger for soldering.</description>
+<wire x1="0" y1="0" x2="0" y2="8.382" width="0.127" layer="21"/>
+<wire x1="8.382" y1="8.382" x2="8.382" y2="0" width="0.127" layer="21"/>
+<wire x1="8.382" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="-1.27" y="8.89" size="1.016" layer="21">&gt;value</text>
+<wire x1="0" y1="8.382" x2="8.382" y2="8.382" width="0.127" layer="21"/>
+<smd name="P$3" x="4.318" y="8.382" dx="4.826" dy="2.032" layer="1" rot="R90"/>
+<smd name="P$1" x="4.318" y="-0.254" dx="4.826" dy="2.032" layer="1" rot="R90"/>
+<wire x1="0.254" y1="7.366" x2="1.016" y2="8.128" width="0.127" layer="21"/>
+<wire x1="7.366" y1="8.128" x2="8.128" y2="7.366" width="0.127" layer="21"/>
+<wire x1="6.604" y1="7.874" x2="6.604" y2="6.858" width="0.127" layer="21"/>
+<wire x1="6.096" y1="7.366" x2="7.112" y2="7.366" width="0.127" layer="21"/>
+<wire x1="6.096" y1="0.762" x2="7.112" y2="0.762" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BRICK_DC-DC_CONVERTER">
@@ -176,7 +193,7 @@
 <wire x1="12.7" y1="-33.02" x2="-12.7" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-33.02" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
 <pin name="+VIN" x="-15.24" y="7.62" length="short" direction="pwr"/>
-<pin name="ON/OFF1" x="-15.24" y="-20.32" length="short"/>
+<pin name="ON/!OFF1" x="-15.24" y="-20.32" length="short"/>
 <pin name="-VIN" x="-15.24" y="0" length="short" direction="pwr"/>
 <pin name="-VOUT" x="15.24" y="0" length="short" direction="pwr" rot="R180"/>
 <pin name="+S" x="15.24" y="-5.08" length="short" rot="R180"/>
@@ -185,13 +202,22 @@
 <pin name="SA1" x="15.24" y="-15.24" length="short" rot="R180"/>
 <pin name="SCL" x="15.24" y="-25.4" length="short" rot="R180"/>
 <pin name="SDA" x="15.24" y="-30.48" length="short" rot="R180"/>
-<pin name="PG" x="-15.24" y="-15.24" length="short"/>
+<pin name="!PG" x="-15.24" y="-15.24" length="short"/>
 <pin name="DGND" x="-15.24" y="-25.4" length="short" direction="pwr"/>
 <pin name="SMBALERT" x="-15.24" y="-10.16" length="short"/>
 <pin name="ON/OFF2" x="-15.24" y="-5.08" length="short"/>
 <pin name="+VOUT" x="15.24" y="7.62" length="short" direction="pwr" rot="R180"/>
 <text x="-12.446" y="10.922" size="1.778" layer="125">&gt;Name</text>
 <text x="-12.7" y="-35.56" size="1.778" layer="127">&gt;Value</text>
+</symbol>
+<symbol name="EXTENDED_PAD_CAP">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="4.08" x2="2.4892" y2="3.2258" width="0.254" layer="94" curve="-37.878202"/>
+<wire x1="-2.4668" y1="3.2296" x2="0" y2="4.0639" width="0.254" layer="94" curve="-37.373024"/>
+<text x="1.016" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="0.889" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="4" x="0" y="1.524" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -205,6 +231,7 @@ Intermediate DC-DC Bus Converter</description>
 <devices>
 <device name="" package="BRICK_DC-DC_CONVERTER">
 <connects>
+<connect gate="G$1" pin="!PG" pad="12"/>
 <connect gate="G$1" pin="+S" pad="6"/>
 <connect gate="G$1" pin="+VIN" pad="1"/>
 <connect gate="G$1" pin="+VOUT" pad="16"/>
@@ -212,14 +239,30 @@ Intermediate DC-DC Bus Converter</description>
 <connect gate="G$1" pin="-VIN" pad="4"/>
 <connect gate="G$1" pin="-VOUT" pad="5"/>
 <connect gate="G$1" pin="DGND" pad="13"/>
-<connect gate="G$1" pin="ON/OFF1" pad="2"/>
+<connect gate="G$1" pin="ON/!OFF1" pad="2"/>
 <connect gate="G$1" pin="ON/OFF2" pad="15"/>
-<connect gate="G$1" pin="PG" pad="12"/>
 <connect gate="G$1" pin="SA0" pad="8"/>
 <connect gate="G$1" pin="SA1" pad="9"/>
 <connect gate="G$1" pin="SCL" pad="10"/>
 <connect gate="G$1" pin="SDA" pad="11"/>
 <connect gate="G$1" pin="SMBALERT" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EXTENDED_PAD_CAPACITOR">
+<description>This is an updated version of the capacitor from package: NICHICON-UX-8X10, Library: ux-capacitor. The old capacitor that was used didnt have enough space to solder on a 22uF capacitor efectivly so this one has longer and slightly wider pads.</description>
+<gates>
+<gate name="G$1" symbol="EXTENDED_PAD_CAP" x="0" y="-4.064"/>
+</gates>
+<devices>
+<device name="" package="MODIFIED-NICHICON-UX-8X10">
+<connects>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4053,55 +4096,6 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="ExtendedPadCap">
-<packages>
-<package name="MODIFIED-NICHICON-UX-8X10">
-<description>This Capactior is a larger version of the capacitor from Package: NICHICON-UX-8X10, Library: ux-capacitor. This newer version has the same silkscreen demensions while making the copper pads larger for soldering.</description>
-<wire x1="0" y1="0" x2="0" y2="8.382" width="0.127" layer="21"/>
-<wire x1="8.382" y1="8.382" x2="8.382" y2="0" width="0.127" layer="21"/>
-<wire x1="8.382" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<text x="-1.27" y="8.89" size="1.016" layer="21">&gt;value</text>
-<wire x1="0" y1="8.382" x2="8.382" y2="8.382" width="0.127" layer="21"/>
-<smd name="P$3" x="4.318" y="7.874" dx="3.81" dy="2.032" layer="1" rot="R90"/>
-<smd name="P$1" x="4.318" y="0.254" dx="3.81" dy="2.032" layer="1" rot="R90"/>
-<wire x1="0.254" y1="7.366" x2="1.016" y2="8.128" width="0.127" layer="21"/>
-<wire x1="7.366" y1="8.128" x2="8.128" y2="7.366" width="0.127" layer="21"/>
-<wire x1="6.604" y1="7.874" x2="6.604" y2="6.858" width="0.127" layer="21"/>
-<wire x1="6.096" y1="7.366" x2="7.112" y2="7.366" width="0.127" layer="21"/>
-<wire x1="6.096" y1="0.762" x2="7.112" y2="0.762" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="EXTENDED_PAD_CAP">
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="4.08" x2="2.4892" y2="3.2258" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4668" y1="3.2296" x2="0" y2="4.0639" width="0.254" layer="94" curve="-37.373024"/>
-<text x="1.016" y="5.715" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="0.889" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="4" x="0" y="1.524" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="EXTENDED_PAD_CAPACITOR">
-<description>This is an updated version of the capacitor from package: NICHICON-UX-8X10, Library: ux-capacitor. The old capacitor that was used didnt have enough space to solder on a 22uF capacitor efectivly so this one has longer and slightly wider pads.</description>
-<gates>
-<gate name="G$1" symbol="EXTENDED_PAD_CAP" x="0" y="-4.064"/>
-</gates>
-<devices>
-<device name="" package="MODIFIED-NICHICON-UX-8X10">
-<connects>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
@@ -4498,9 +4492,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="C14" library="rcl" deviceset="C-US" device="C0603" value=".1uF"/>
 <part name="C15" library="rcl" deviceset="C-US" device="C0603" value=".1uF"/>
 <part name="C16" library="rcl" deviceset="C-US" device="C0603" value=".1uF"/>
-<part name="C22V1" library="ExtendedPadCap" deviceset="EXTENDED_PAD_CAPACITOR" device=""/>
-<part name="C22V5" library="ExtendedPadCap" deviceset="EXTENDED_PAD_CAPACITOR" device=""/>
-<part name="C22V6" library="ExtendedPadCap" deviceset="EXTENDED_PAD_CAPACITOR" device=""/>
+<part name="C22V1" library="PowerComponents" deviceset="EXTENDED_PAD_CAPACITOR" device=""/>
+<part name="C22V5" library="PowerComponents" deviceset="EXTENDED_PAD_CAPACITOR" device=""/>
+<part name="C22V6" library="PowerComponents" deviceset="EXTENDED_PAD_CAPACITOR" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
@@ -4670,7 +4664,7 @@ stay on when disconnect</text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PG"/>
+<pinref part="U$1" gate="G$1" pin="!PG"/>
 <wire x1="187.96" y1="139.7" x2="231.14" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="137.16" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
@@ -4817,7 +4811,7 @@ stay on when disconnect</text>
 </net>
 <net name="ON/OFF" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="ON/OFF1"/>
+<pinref part="U$1" gate="G$1" pin="ON/!OFF1"/>
 <wire x1="231.14" y1="134.62" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="134.62" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="ON/OFF"/>
