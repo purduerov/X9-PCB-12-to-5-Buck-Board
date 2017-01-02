@@ -14501,36 +14501,36 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC1" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC1" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC1" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P1" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="V+_ESC2" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC2" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC2" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P2" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC3" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC3" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC4" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC4" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC5" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC5" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC6" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC6" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC7" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC7" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC8" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC8" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="MotherboardParts" deviceset="ZENER-SOT23" device="" value="22V">
 <attribute name="PN-DIGI" value="BZX84C22LT1GOSCT-ND"/>
@@ -14548,11 +14548,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="P-6" library="supply1" deviceset="V-" device=""/>
 <part name="V+_ESC9" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC9" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="V+_ESC10" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC10" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
-<part name="PWM_ESC10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="ATMEGA328P_TQFP" device="" value="ATMEGA328P_TQFP"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="10KOHM-1/10W-1%(0603)" device="0603" value="10K"/>
@@ -14560,8 +14560,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
-<part name="PWM_ESC11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="PWM_ESC12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="P12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="V+_ESC11" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="V-_ESC11" library="PowerComponents" deviceset="16_GUAGE_WIRE" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
@@ -14584,18 +14584,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="F10" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
 <part name="F11" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
 <part name="F12" library="PowerComponents" deviceset="PTC(2920L)" device="" value="10A"/>
-<part name="ESC_GND1" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND2" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="ESC_GND12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G1" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G5" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G2" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G6" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G7" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G9" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G8" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G10" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G11" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
+<part name="G12" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="U4" library="microbuilder" deviceset="PCA9685" device="" value="PCA9685"/>
@@ -14684,36 +14684,36 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND3" gate="1" x="127" y="99.06"/>
 <instance part="V+_ESC1" gate="G$1" x="162.56" y="215.9" rot="MR0"/>
 <instance part="V-_ESC1" gate="G$1" x="162.56" y="210.82" rot="MR0"/>
-<instance part="PWM_ESC1" gate="G$1" x="370.84" y="492.76" rot="MR0"/>
+<instance part="P1" gate="G$1" x="370.84" y="492.76" rot="MR0"/>
 <instance part="GND4" gate="1" x="167.64" y="208.28" rot="MR0"/>
 <instance part="P+7" gate="VCC" x="187.96" y="226.06" rot="MR0"/>
 <instance part="V+_ESC2" gate="G$1" x="162.56" y="200.66" rot="MR0"/>
 <instance part="V-_ESC2" gate="G$1" x="162.56" y="195.58" rot="MR0"/>
-<instance part="PWM_ESC2" gate="G$1" x="358.14" y="490.22" rot="MR0"/>
+<instance part="P2" gate="G$1" x="358.14" y="490.22" rot="MR0"/>
 <instance part="GND5" gate="1" x="167.64" y="193.04" rot="MR0"/>
 <instance part="V+_ESC3" gate="G$1" x="162.56" y="185.42" rot="MR0"/>
 <instance part="V-_ESC3" gate="G$1" x="162.56" y="180.34" rot="MR0"/>
-<instance part="PWM_ESC3" gate="G$1" x="345.44" y="487.68" rot="MR0"/>
+<instance part="P3" gate="G$1" x="345.44" y="487.68" rot="MR0"/>
 <instance part="GND6" gate="1" x="167.64" y="177.8" rot="MR0"/>
 <instance part="V+_ESC4" gate="G$1" x="162.56" y="170.18" rot="MR0"/>
 <instance part="V-_ESC4" gate="G$1" x="162.56" y="165.1" rot="MR0"/>
-<instance part="PWM_ESC4" gate="G$1" x="370.84" y="485.14" rot="MR0"/>
+<instance part="P4" gate="G$1" x="370.84" y="485.14" rot="MR0"/>
 <instance part="GND7" gate="1" x="167.64" y="162.56" rot="MR0"/>
 <instance part="V+_ESC5" gate="G$1" x="162.56" y="154.94" rot="MR0"/>
 <instance part="V-_ESC5" gate="G$1" x="162.56" y="149.86" rot="MR0"/>
-<instance part="PWM_ESC5" gate="G$1" x="358.14" y="482.6" rot="MR0"/>
+<instance part="P5" gate="G$1" x="358.14" y="482.6" rot="MR0"/>
 <instance part="GND8" gate="1" x="167.64" y="147.32" rot="MR0"/>
 <instance part="V+_ESC6" gate="G$1" x="162.56" y="139.7" rot="MR0"/>
 <instance part="V-_ESC6" gate="G$1" x="162.56" y="134.62" rot="MR0"/>
-<instance part="PWM_ESC6" gate="G$1" x="345.44" y="480.06" rot="MR0"/>
+<instance part="P6" gate="G$1" x="345.44" y="480.06" rot="MR0"/>
 <instance part="GND9" gate="1" x="167.64" y="132.08" rot="MR0"/>
 <instance part="V+_ESC7" gate="G$1" x="162.56" y="124.46" rot="MR0"/>
 <instance part="V-_ESC7" gate="G$1" x="162.56" y="119.38" rot="MR0"/>
-<instance part="PWM_ESC7" gate="G$1" x="370.84" y="477.52" rot="MR0"/>
+<instance part="P7" gate="G$1" x="370.84" y="477.52" rot="MR0"/>
 <instance part="GND10" gate="1" x="167.64" y="116.84" rot="MR0"/>
 <instance part="V+_ESC8" gate="G$1" x="162.56" y="109.22" rot="MR0"/>
 <instance part="V-_ESC8" gate="G$1" x="162.56" y="104.14" rot="MR0"/>
-<instance part="PWM_ESC8" gate="G$1" x="358.14" y="474.98" rot="MR0"/>
+<instance part="P8" gate="G$1" x="358.14" y="474.98" rot="MR0"/>
 <instance part="GND11" gate="1" x="167.64" y="101.6" rot="MR0"/>
 <instance part="U$4" gate="G$1" x="33.02" y="172.72" rot="R90">
 <attribute name="PN-DIGI" x="33.02" y="172.72" size="1.778" layer="96" rot="R90" display="off"/>
@@ -14731,11 +14731,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="P-6" gate="1" x="60.96" y="154.94"/>
 <instance part="V+_ESC9" gate="G$1" x="162.56" y="93.98" rot="MR0"/>
 <instance part="V-_ESC9" gate="G$1" x="162.56" y="88.9" rot="MR0"/>
-<instance part="PWM_ESC9" gate="G$1" x="345.44" y="472.44" rot="MR0"/>
+<instance part="P9" gate="G$1" x="345.44" y="472.44" rot="MR0"/>
 <instance part="GND12" gate="1" x="167.64" y="86.36" rot="MR0"/>
 <instance part="V+_ESC10" gate="G$1" x="162.56" y="78.74" rot="MR0"/>
 <instance part="V-_ESC10" gate="G$1" x="162.56" y="73.66" rot="MR0"/>
-<instance part="PWM_ESC10" gate="G$1" x="370.84" y="469.9" rot="MR0"/>
+<instance part="P10" gate="G$1" x="370.84" y="469.9" rot="MR0"/>
 <instance part="GND13" gate="1" x="167.64" y="71.12" rot="MR0"/>
 <instance part="U1" gate="U$1" x="132.08" y="337.82"/>
 <instance part="R3" gate="G$1" x="101.6" y="368.3"/>
@@ -14743,8 +14743,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GND15" gate="1" x="96.52" y="309.88"/>
 <instance part="C1" gate="G$1" x="96.52" y="332.74"/>
 <instance part="C2" gate="G$1" x="86.36" y="332.74"/>
-<instance part="PWM_ESC11" gate="G$1" x="358.14" y="467.36" rot="MR0"/>
-<instance part="PWM_ESC12" gate="G$1" x="345.44" y="464.82" rot="MR0"/>
+<instance part="P11" gate="G$1" x="358.14" y="467.36" rot="MR0"/>
+<instance part="P12" gate="G$1" x="345.44" y="464.82" rot="MR0"/>
 <instance part="V+_ESC11" gate="G$1" x="162.56" y="63.5" rot="MR0"/>
 <instance part="V-_ESC11" gate="G$1" x="162.56" y="58.42" rot="MR0"/>
 <instance part="GND19" gate="1" x="167.64" y="55.88" rot="MR0"/>
@@ -14767,18 +14767,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="F10" gate="G$1" x="177.8" y="78.74" rot="MR180"/>
 <instance part="F11" gate="G$1" x="177.8" y="63.5" rot="MR180"/>
 <instance part="F12" gate="G$1" x="177.8" y="48.26" rot="MR180"/>
-<instance part="ESC_GND1" gate="G$1" x="287.02" y="83.82" rot="MR180"/>
-<instance part="ESC_GND3" gate="G$1" x="287.02" y="71.12" rot="MR180"/>
-<instance part="ESC_GND5" gate="G$1" x="287.02" y="58.42" rot="MR180"/>
-<instance part="ESC_GND2" gate="G$1" x="312.42" y="83.82" rot="MR0"/>
-<instance part="ESC_GND4" gate="G$1" x="312.42" y="71.12" rot="MR0"/>
-<instance part="ESC_GND6" gate="G$1" x="312.42" y="58.42" rot="MR0"/>
-<instance part="ESC_GND7" gate="G$1" x="327.66" y="83.82" rot="MR180"/>
-<instance part="ESC_GND9" gate="G$1" x="327.66" y="71.12" rot="MR180"/>
-<instance part="ESC_GND8" gate="G$1" x="355.6" y="83.82" rot="MR0"/>
-<instance part="ESC_GND10" gate="G$1" x="355.6" y="71.12" rot="MR0"/>
-<instance part="ESC_GND11" gate="G$1" x="327.66" y="58.42" rot="MR180"/>
-<instance part="ESC_GND12" gate="G$1" x="355.6" y="58.42" rot="MR0"/>
+<instance part="G1" gate="G$1" x="287.02" y="83.82" rot="MR180"/>
+<instance part="G3" gate="G$1" x="287.02" y="71.12" rot="MR180"/>
+<instance part="G5" gate="G$1" x="287.02" y="58.42" rot="MR180"/>
+<instance part="G2" gate="G$1" x="312.42" y="83.82" rot="MR0"/>
+<instance part="G4" gate="G$1" x="312.42" y="71.12" rot="MR0"/>
+<instance part="G6" gate="G$1" x="312.42" y="58.42" rot="MR0"/>
+<instance part="G7" gate="G$1" x="327.66" y="83.82" rot="MR180"/>
+<instance part="G9" gate="G$1" x="327.66" y="71.12" rot="MR180"/>
+<instance part="G8" gate="G$1" x="355.6" y="83.82" rot="MR0"/>
+<instance part="G10" gate="G$1" x="355.6" y="71.12" rot="MR0"/>
+<instance part="G11" gate="G$1" x="327.66" y="58.42" rot="MR180"/>
+<instance part="G12" gate="G$1" x="355.6" y="58.42" rot="MR0"/>
 <instance part="GND21" gate="1" x="299.72" y="50.8" rot="MR0"/>
 <instance part="GND22" gate="1" x="340.36" y="50.8" rot="MR0"/>
 <instance part="U4" gate="G$1" x="312.42" y="477.52"/>
@@ -15158,19 +15158,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="167.64" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ESC_GND1" gate="G$1" pin="1"/>
-<pinref part="ESC_GND2" gate="G$1" pin="1"/>
+<pinref part="G1" gate="G$1" pin="1"/>
+<pinref part="G2" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="83.82" x2="299.72" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="ESC_GND3" gate="G$1" pin="1"/>
-<pinref part="ESC_GND4" gate="G$1" pin="1"/>
+<pinref part="G3" gate="G$1" pin="1"/>
+<pinref part="G4" gate="G$1" pin="1"/>
 <wire x1="299.72" y1="83.82" x2="304.8" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="71.12" x2="299.72" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="71.12" x2="304.8" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="83.82" x2="299.72" y2="71.12" width="0.1524" layer="91"/>
 <junction x="299.72" y="83.82"/>
 <junction x="299.72" y="71.12"/>
-<pinref part="ESC_GND5" gate="G$1" pin="1"/>
-<pinref part="ESC_GND6" gate="G$1" pin="1"/>
+<pinref part="G5" gate="G$1" pin="1"/>
+<pinref part="G6" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="58.42" x2="299.72" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="58.42" x2="304.8" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="71.12" x2="299.72" y2="58.42" width="0.1524" layer="91"/>
@@ -15179,11 +15179,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="299.72" y1="58.42" x2="299.72" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ESC_GND7" gate="G$1" pin="1"/>
-<pinref part="ESC_GND8" gate="G$1" pin="1"/>
+<pinref part="G7" gate="G$1" pin="1"/>
+<pinref part="G8" gate="G$1" pin="1"/>
 <wire x1="335.28" y1="83.82" x2="340.36" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="ESC_GND9" gate="G$1" pin="1"/>
-<pinref part="ESC_GND10" gate="G$1" pin="1"/>
+<pinref part="G9" gate="G$1" pin="1"/>
+<pinref part="G10" gate="G$1" pin="1"/>
 <wire x1="340.36" y1="83.82" x2="347.98" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="71.12" x2="340.36" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="71.12" x2="347.98" y2="71.12" width="0.1524" layer="91"/>
@@ -15191,9 +15191,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="340.36" y="83.82"/>
 <junction x="340.36" y="71.12"/>
 <wire x1="340.36" y1="71.12" x2="340.36" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="ESC_GND11" gate="G$1" pin="1"/>
+<pinref part="G11" gate="G$1" pin="1"/>
 <wire x1="340.36" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="ESC_GND12" gate="G$1" pin="1"/>
+<pinref part="G12" gate="G$1" pin="1"/>
 <wire x1="340.36" y1="58.42" x2="347.98" y2="58.42" width="0.1524" layer="91"/>
 <junction x="340.36" y="58.42"/>
 <pinref part="GND22" gate="1" pin="GND"/>
@@ -15529,70 +15529,70 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="PWM_ESC1" gate="G$1" pin="1"/>
+<pinref part="P1" gate="G$1" pin="1"/>
 <wire x1="363.22" y1="492.76" x2="332.74" y2="492.76" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="PWM0"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="PWM_ESC2" gate="G$1" pin="1"/>
+<pinref part="P2" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM1"/>
 <wire x1="350.52" y1="490.22" x2="332.74" y2="490.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="PWM_ESC3" gate="G$1" pin="1"/>
+<pinref part="P3" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM2"/>
 <wire x1="337.82" y1="487.68" x2="332.74" y2="487.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="PWM_ESC4" gate="G$1" pin="1"/>
+<pinref part="P4" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM3"/>
 <wire x1="363.22" y1="485.14" x2="332.74" y2="485.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="PWM_ESC5" gate="G$1" pin="1"/>
+<pinref part="P5" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM4"/>
 <wire x1="350.52" y1="482.6" x2="332.74" y2="482.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="PWM_ESC6" gate="G$1" pin="1"/>
+<pinref part="P6" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM5"/>
 <wire x1="337.82" y1="480.06" x2="332.74" y2="480.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="PWM_ESC7" gate="G$1" pin="1"/>
+<pinref part="P7" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM6"/>
 <wire x1="363.22" y1="477.52" x2="332.74" y2="477.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="PWM_ESC8" gate="G$1" pin="1"/>
+<pinref part="P8" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM7"/>
 <wire x1="350.52" y1="474.98" x2="332.74" y2="474.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="PWM_ESC9" gate="G$1" pin="1"/>
+<pinref part="P9" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM8"/>
 <wire x1="337.82" y1="472.44" x2="332.74" y2="472.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="PWM_ESC10" gate="G$1" pin="1"/>
+<pinref part="P10" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM9"/>
 <wire x1="363.22" y1="469.9" x2="332.74" y2="469.9" width="0.1524" layer="91"/>
 </segment>
@@ -15641,14 +15641,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="PWM_ESC11" gate="G$1" pin="1"/>
+<pinref part="P11" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM10"/>
 <wire x1="350.52" y1="467.36" x2="332.74" y2="467.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="PWM_ESC12" gate="G$1" pin="1"/>
+<pinref part="P12" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="PWM11"/>
 <wire x1="337.82" y1="464.82" x2="332.74" y2="464.82" width="0.1524" layer="91"/>
 </segment>
